@@ -26,7 +26,7 @@ CXX		= $(MYCC) $(CF_ALL)
 LD_ALL		=
 LL_ALL		= -lstdc++
 
-LINK		= $(MYCC) -o $@ $^
+LINK		= $(MYCC) $(LD_ALL) -o $@ $^ $(LL_ALL)
 
 SRC		= $(wildcard *.cc)
 
